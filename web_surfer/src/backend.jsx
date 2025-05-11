@@ -29,8 +29,3 @@ app.delete('/api/notes/:id', (req, res) => {
   notes = notes.filter(note => note.id !== id);
   res.status(200).json({ message: 'Note deleted' });
 });
-
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
